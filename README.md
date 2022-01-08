@@ -1,2 +1,2 @@
 # Javascript-Projects
-Javascript projects. 
+Javascript projects from Pitman Training 2022. 
