@@ -35,9 +35,9 @@ function currentSlide(n) {
  //DOESNT WORK 
 function showSlides(n) {  
     var i; 
-    var slides = document.getElementById("mySlides");
+    var slides = document.getElementById("mySlides fade");
     var dots = document.getElementById("dot");
-    if( n > slides.length ) {slideIndex = 1}
+    if( n > slides.length) {slideIndex = 1}
     if( n < 1 ) { slideIndex = slides.length }
     for( i = 0; i < slides.length; i++) {
         slides[i].style.display = "none";
