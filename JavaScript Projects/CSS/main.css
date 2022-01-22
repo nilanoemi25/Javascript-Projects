@@ -1,0 +1,27 @@
+div { 
+    border: 2px solid black; 
+    border-radius: 5px;
+    background-color:azure; 
+    padding: 15px; 
+    max-width: 400px;
+}
+
+input[type="text"], select { 
+    background-color: lightyellow;
+    border-radius: 4%;
+    padding: 8px;
+    margin: auto; 
+}
+
+
+input[type="submit"] {
+    background-color: limegreen;
+    color: white; 
+    border-radius: 4%;
+    margin: 5px; 
+    width: 42%; 
+}
+
+input[type="submit"]:hover { 
+    background-color: mediumspringgreen;
+}
