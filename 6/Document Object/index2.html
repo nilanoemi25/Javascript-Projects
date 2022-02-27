@@ -1,0 +1,50 @@
+<!DOCTYPE html> 
+<html>
+    <head>
+       <link rel="stylesheet" href="CSS/main2.css"> 
+    </head>
+
+    <body> 
+        <h2> Popup Form </h2> 
+        <p id="p"><a href="#fruit"> Click on button  </p> 
+        <div id=anim>
+        <p> This line will move </p> 
+        </div> 
+         <br>
+         <br>
+         <br> 
+         <br> 
+         <br> 
+         <br> 
+         <br> 
+         <br> 
+         <br> 
+         <br> 
+         <br> 
+         <br> 
+        <div > <!--Challenge 33 not fully working -->
+            <img src="images (1).jpg" id="fruit" class="fruit" alt="fruit">
+        
+        </div> 
+
+        <button class="open-button" onclick="openForm()"> Click </button> 
+
+     <div class="form-popup" id="myForm"> 
+         <form action="" class="form-container"> 
+             <h1>Login </h1> 
+
+             <label for="email"<b> Email</b></label> 
+             <input type="text" placeholder="Enter Email" name="email" required> 
+
+             <label for="psw"<b> Password </b></label> 
+             <input type="password" placeholder="Enter Password" name="psw" required> 
+
+             <button type="submit" class="btn"> Login </button> 
+             <button type="button" class="btn cancel"
+             onclick="closeForm()"> Close </button> 
+         </form> 
+        </div> 
+        <script src="./JS/main2.js"></script> 
+    </body> 
+
+ </html> 

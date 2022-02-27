@@ -2,9 +2,45 @@
 <html> 
     <head>
         <title> Title </title>
-        <script src="./JS/main.js" defer> </script> 
+       <!-- <script src="./JS/main.js" defer> </script> --> 
+        <link rel="stylesheet" href="./CSS/main.css"> 
+
     </head>
     <body>
-        <p> Hello World </p> 
+        <script> document.body.classList.add('fade-out');  </script> 
+        
+        
+        <p style="font-size: 2vw"> Hello World, Hello World, Hello World, Hello World, Hello World, Hello World  </p> <!--Ch 28 -->
+        <p id="XML_Example"></p> 
+
+        <script> window.addEventListener('DOMContentLoaded', () => { 
+            document.body.classList.remove('fade-out');
+        }  ); 
+       
+        </script> 
+
+        //Challenge 30 currently not working 
+
+        <form name="myForm" action="https://formspree.io/f/mwkaddnd" onsubmit="return validateForm()" method="post">
+            <label for="fname"> First Name: </label> <br> 
+            <input type="text" id="fname" name="fname"><br> 
+            <label for="lname"> Last Name:    </label> <br> 
+            <input type="text" id="lname" name="lname"> <br>
+            <label for="phone"> Phone Number: </label> <br> 
+            <input type="text" id="phone" name="phone"><br>
+            <input type="submit" value="submit"> 
+        </form> 
+
+
+        <script> 
+            function validateForm(){ 
+               let x = document.forms["myForm"]["fname"].value; 
+                 if( x == "") {
+                   alert ="Input not valid";
+                   return false; 
+               }
+            } 
+            </script> 
+    
     </body>
 </html>

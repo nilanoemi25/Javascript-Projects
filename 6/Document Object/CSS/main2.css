@@ -1,0 +1,97 @@
+ {
+    box-sizing: border-box; }
+
+ html {
+  scroll-behavior: smooth;
+      }
+
+.open-button { 
+    background-color: #555; 
+    color: white; 
+    padding: 16px 20px; 
+    border: none; 
+    cursor: pointer; 
+    opacity: 0.8; 
+    position: fixed; 
+    bottom: 23px; 
+    right: 28px; 
+    width: 280px; 
+}
+
+.form-popup { 
+    display: none; 
+    position: fixed; 
+    bottom: 0;
+    right: 15px; 
+    border: 2px solid black; 
+    z-index: 9;
+}
+
+.form-container { 
+    max-width: 300px;
+    padding: 10px; 
+    background-color: white; 
+}
+
+.form-container input[type=text], .form-container input[type=password] {
+    width: 100%; 
+    padding: 15px; 
+    margin: 5px 0 22px 0; 
+    border: none; 
+    background: #f1f1f1; 
+}
+
+.form-container .btn { 
+    background-color: blue; 
+    color: white; 
+    padding: 16px 20px; 
+    border: none; 
+    cursor: pointer; 
+    width: 100%; 
+    margin-bottom: 10px; 
+    opacity: 0.8; 
+}
+
+.form-container .cancel { 
+    background-color: red; 
+}
+
+
+@keyframes mymove { 
+    from {top: 0px;}
+    to { top: 200px;}
+}
+
+#anim{ 
+    background-color: aqua;
+    width: 100px; 
+    height: 80px; 
+    position: relative; 
+    color: blue; 
+    animation: mymove 5s; 
+}
+
+
+.fruit  { 
+    display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 25%;
+  animation: zoominoutsinglefeatured 15s forwards
+}
+
+@keyframes zoominoutsinlefeatured { 
+    0% { 
+        transform: scale(1,1);
+    }
+
+    50% { 
+        transform: scale(1.2,1.2);
+    }
+    100% { 
+        transform: scale(1,1); 
+    }
+}
+
+
+
