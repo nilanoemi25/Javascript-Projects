@@ -1,0 +1,55 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+}
+
+<style>
+    #container {
+        width: 400px;
+        height: 400px;
+        position: relative;
+        background: blue ;
+    }
+
+    #animate {
+        width: 50px;
+        height: 50px;
+        position: absolute;
+        background-color: greenyellow;
+    }
+</style>
+
+<div class="text-center">
+    <h1 class="display-4">Welcome</h1>
+    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+    <p> Click below to find a music video from YouTube: </p>
+    <iframe width="420" height="315"
+            src="https://youtu.be/NOsFQ-VUeMwautoplay=0&mute=1">
+    </iframe>
+    <p><button onclick="myMove()">Click Me</button></p>
+
+</div>
+
+<div id="container">
+    <div id="animate"></div>
+</div>
+
+<script>
+    function myMove() {
+        let id = null;
+        const elem = document.getElementById("animate");
+        let pos = 0;
+        clearInterval(id);
+        id = setInterval(frame, 5);
+        function frame() {
+            if (pos == 350) {
+                clearInterval(id);
+            } else {
+                pos++;
+                elem.style.top = pos + "px";
+                elem.style.left = pos + "px";
+            }
+        }
+    }
+</script>
